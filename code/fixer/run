@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "name"
+read name
+
+cat ./input/* > ./temp/input
+python ./code/fix1.py ./temp/input
+python ./code/fix2.py
+python ./code/fix3.py
+python ./code/fix35.py
+python ./code/fix4.py
+python ./code/fix5.py $name
+python ./code/normal.py $name
+python ./code/csv.py $name
+python ./code/image.py $name
+python ./code/test.py $name
+#rm ./temp/*
+

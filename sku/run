@@ -1,0 +1,5 @@
+#!/bin/bash
+while read line; do
+	echo `python ./code/sku.py $line` 1>> "./output/$2"
+done < "./input/$1"
+
